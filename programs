@@ -1,33 +1,46 @@
+Install first
+=============
+
 NordVPN			https://nordvpn.com/download/linux/
 Docker			https://docs.docker.com/engine/install/debian/
 Git			apt install git
 Pyenv			See ubuntu-dev-container
 Poetry			See ubuntu-dev-container
 
-7zip			apt install p7zip-full
-Audacity		apt install audacity
-Azure Data Studio	https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#linux-installation
-Blender			apt install blender
-Bless (hex edit)	apt install bless
-Calculator		apt install calc
-Discord			https://discord.com/download
-FireFox			apt install firefox
-FileBot			https://www.filebot.net/forums/viewtopic.php?t=6028
-FreeCAD			apt install freecad
-GIMP			apt install gimp
-Haruna			apt install haruna
-HydraPaper		apt install hydrapaper
-Inkscape		apt install inkscape
-KDenLive		apt install kdenlive
-Mega			https://mega.nz/desktop
-MuseScore		apt install musescore3
-Nomacs			apt install nomacs
-OBS Studio		apt install obs-studio
-Okular			apt install okular
-Plex			https://support.plex.tv/articles/200288586-installation/
-qBittorrent		apt install qbittorrent
+
+Package Installs
+================
+
+	apt install ...
+7zip			p7zip-full
+Audacity		audacity
+Blender			blender
+Bless (hex edit)	bless
+Calculator		calc
+FireFox			firefox
+FreeCAD			freecad
+GIMP			gimp
+Haruna			haruna
+HydraPaper		hydrapaper
+Inkscape		inkscape
+KDenLive		kdenlive
+MuseScore		musescore3
+Nomacs			nomacs
+OBS Studio		obs-studio
+Okular			okular
+qBittorrent		qbittorrent
 			- install theme from Apps folder
-Solaar			apt install solar
+Solaar (logitech)	solaar
+
+
+Custom Installs
+===============
+
+Azure Data Studio	https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#linux-installation
+Discord			https://discord.com/download
+FileBot			https://www.filebot.net/forums/viewtopic.php?t=6028
+Mega			https://mega.nz/desktop
+Plex			https://support.plex.tv/articles/200288586-installation/
 Spotify			https://www.spotify.com/us/download/linux/
 Teams			https://docs.microsoft.com/en-us/microsoftteams/get-clients?tabs=Linux
 WPS Office		https://www.wps.com/office/linux/

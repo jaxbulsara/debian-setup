@@ -15,3 +15,39 @@ Plex Media Server
   - Figure out the permissions when you do this next time
     - plex needs to be in the `plugdev` group to access mounted partitions.
 
+Python
+------
+
+sudo apt update
+sudo apt install \
+	libedit-dev \
+	make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
+	libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev \
+	libxmlsec1-dev libffi-dev liblzma-dev \
+	unixodbc unixodbc-dev freetds-dev freetds-bin tdsodbc
+
+cp files/odbcinst.ini /etc
+
+export PYENV_ROOT=$HOME/.pyenv
+export POETRY_HOME=$HOME/.poetry
+export PATH=$PYENV_ROOT/bin:$POETRY_HOME/bin:$PATH
+
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+exec $SHELL
+
+pyenv init --path
+pyenv init -
+
+sed -Ei \
+	-e '/^([^#]|$)/ {a export PYENV_ROOT="$HOME/.pyenv" \nexport PATH="$PYENV_ROOT/bin:$PATH"\n' \
+	-e ':a' \
+	-e '$!{n;ba};}' ~/.profile
+echo 'eval "$(pyenv init --path)"' >> ~/.profile
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
+pyenv install 3.10.4
+pyenv global 3.10.4
+
+echo "alias python=python3" >> ~/.bashrc
+
+

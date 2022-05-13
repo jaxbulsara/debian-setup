@@ -88,3 +88,16 @@ echo "alias python=python3" >> ~/.bashrc
 curl -sSL https://install.python-poetry.org | python3 -
 poetry completions bash > /etc/bash_completion.d/poetry
 
+
+Docker
+------
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+rm get-docker.sh
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+reboot
+

@@ -49,6 +49,7 @@ Plex Media Server
 
 sudo usermod -aG mounts plex
 
+
 Python
 ------
 
@@ -60,7 +61,7 @@ sudo apt install \
 	libxmlsec1-dev libffi-dev liblzma-dev \
 	unixodbc unixodbc-dev freetds-dev freetds-bin tdsodbc
 
-cp files/odbcinst.ini /etc
+sudo cp files/odbcinst.ini /etc
 
 export PYENV_ROOT=$HOME/.pyenv
 export POETRY_HOME=$HOME/.poetry

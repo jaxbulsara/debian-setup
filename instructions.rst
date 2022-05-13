@@ -84,3 +84,6 @@ pyenv global 3.10.4
 
 echo "alias python=python3" >> ~/.bashrc
 
+curl -sSL https://install.python-poetry.org | python3 -
+poetry completions bash > /etc/bash_completion.d/poetry
+

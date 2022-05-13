@@ -12,6 +12,7 @@ mv git-prompt.sh ~/.git-prompt.sh
 
 # Add git-prompt to bashrc
 source .git-prompt.sh && echo "source ~/.git-prompt.sh" >> ~/.bashrc
+source ~/.bashrc
 
 # Add custom prompt to bashrc
 cat files/prompt.bashrc >> ~/.bashrc

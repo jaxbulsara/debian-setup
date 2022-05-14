@@ -3,6 +3,8 @@ colorscheme molokai
 
 set number
 set noswapfile
-set hlsearch
 set incsearch
+
+set expandtab
+set softtabstop=4
 

@@ -1,5 +1,10 @@
 # Configures git and installs the git prompt
 
+# Install git
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt update
+sudo apt install git
+
 # Configure git
 git config --global user.email jaybulsara@proton.me
 git config --global user.name "Jay Bulsara"

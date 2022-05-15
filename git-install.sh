@@ -10,6 +10,7 @@ git config --global user.email jaybulsara@proton.me
 git config --global user.name "Jay Bulsara"
 git config --global credential.helper store
 git config --global init.defaultBranch main
+git config --global core.editor "vim"
 
 # Download git-prompt.sh
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh

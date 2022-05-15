@@ -2,6 +2,15 @@
 Linux Mint Setup Guide
 ======================
 
+Terminal Bell
+-------------
+
+sudo modprobe pcspkr
+
+test with:
+echo -e \\a
+
+
 NordVPN
 -------
 
